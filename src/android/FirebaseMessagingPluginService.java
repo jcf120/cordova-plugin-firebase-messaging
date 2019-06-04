@@ -81,6 +81,7 @@ public class FirebaseMessagingPluginService extends FirebaseMessagingService {
         builder.setContentTitle(notification.getTitle());
         builder.setContentText(notification.getBody());
         builder.setGroup(notification.getTag());
+        builder.setChannelId(notification.getChannelId());
         builder.setSmallIcon(this.defaultNotificationIcon);
         builder.setColor(this.defaultNotificationColor);
         // must set sound and priority in order to display alert
